@@ -1,46 +1,78 @@
+Конечно! Давай сделаем сайт более воздушным и современным, заменим строгие блоки на легкие карточки с мягкими тенями, а портфолио оформим аккуратной таблицей, чтобы четко разделить вклад мастеров.
+
+Вот обновленный код:
+
+```html
+<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClickForm | Створення сайтів</title>
+    <title>ClickForm | Майстерня сайтів</title>
     <style>
-        body { font-family: sans-serif; background-color: #f0f4f8; color: #1e293b; line-height: 1.6; margin: 0; padding: 20px; }
-        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1, h2 { color: #1d4ed8; text-align: center; }
-        .card { background: #eff6ff; padding: 15px; margin-bottom: 10px; border-radius: 8px; border-left: 5px solid #1d4ed8; }
-        a { display: block; color: #1d4ed8; text-decoration: none; margin: 10px 0; font-weight: bold; }
-        .footer { text-align: center; margin-top: 30px; font-size: 0.9em; color: #64748b; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; color: #334155; margin: 0; padding: 40px 20px; }
+        .container { max-width: 700px; margin: 0 auto; background: #ffffff; padding: 40px; border-radius: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        h1 { color: #2563eb; text-align: center; font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { text-align: center; color: #64748b; margin-bottom: 40px; }
+        h2 { color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        .feature-box { background: #f1f5f9; padding: 20px; border-radius: 16px; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+        th { color: #2563eb; font-size: 0.9rem; }
+        a { color: #2563eb; text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+        .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #f1f5f9; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <h1>ClickForm</h1>
-    <p style="text-align: center;">Твоє агентство зі створення сайтів.</p>
+    <p class="subtitle">Створюємо сайти, що виділяють ваш бізнес серед інших.</p>
 
     <h2>Чому ми?</h2>
-    <div class="card">
-        <strong>Швидкість:</strong> Реалізуємо ваші ідеї максимально швидко.
-    </div>
-    <div class="card">
-        <strong>Доступна ціна:</strong> Професійний підхід за розумні гроші.
+    <div class="feature-box">
+        <p><strong>Ми цінуємо ваші ресурси.</strong> Наш підхід базується на двох принципах: <strong>швидкість</strong> реалізації та <strong>доступна ціна</strong>. Ми робимо якісний веб-продукт без зайвої бюрократії.</p>
     </div>
 
-    <h2>Портфоліо</h2>
-    <a href="https://rozmova-bakirova-psy.com" target="_blank">rozmova-bakirova-psy.com</a>
-    <a href="https://yakshovkova.com" target="_blank">yakshovkova.com</a>
-    <a href="https://powerlifting-club-ajax.vercel.app/" target="_blank">powerlifting-club-ajax.vercel.app</a>
-    <a href="#">Цей сайт (ClickForm)</a>
+    <h2>Наші роботи</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Проєкт</th>
+                <th>Хто виконав</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://rozmova-bakirova-psy.com" target="_blank">rozmova-bakirova-psy.com</a></td>
+                <td>Майстер Андрій</td>
+            </tr>
+            <tr>
+                <td><a href="https://yakshovkova.com" target="_blank">yakshovkova.com</a></td>
+                <td>Майстер Андрій</td>
+            </tr>
+            <tr>
+                <td><a href="https://powerlifting-club-ajax.vercel.app/" target="_blank">powerlifting-club-ajax.vercel.app</a></td>
+                <td>Майстер Андрій</td>
+            </tr>
+            <tr>
+                <td>Цей сайт (ClickForm)</td>
+                <td>Андрій + AI ClickForm</td>
+            </tr>
+        </tbody>
+    </table>
 
     <div class="footer">
-        <p>Майстри: Андрій та AI ClickForm</p>
-        <p>
-            <a href="https://t.me/ClickFormInfo" style="display: inline; margin: 0 5px;">Telegram</a> | 
-            <a href="https://www.instagram.com/clickformweb?psln=aWlhYnB2d3piaGJj&utm_source=qr" style="display: inline; margin: 0 5px;">Instagram</a> | 
-            <a href="https://www.facebook.com/share/19ebvyPYDt/?mibextid=wwXIfr" style="display: inline; margin: 0 5px;">Facebook</a>
-        </p>
+        <p>Зв'яжіться з нами:</p>
+        <a href="https://t.me/ClickFormInfo">Telegram</a> • 
+        <a href="https://www.instagram.com/clickformweb?psln=aWlhYnB2d3piaGJj&utm_source=qr">Instagram</a> • 
+        <a href="https://www.facebook.com/share/19ebvyPYDt/?mibextid=wwXIfr">Facebook</a>
     </div>
 </div>
 
 </body>
 </html>
+```
+
+Как тебе такой «светлый» стиль? Если нужно еще добавить визуальных элементов (например, иконки) или что-то поправить в тексте — обязательно скажи!
